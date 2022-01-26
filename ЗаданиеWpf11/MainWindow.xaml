@@ -1,0 +1,25 @@
+﻿<Window x:Class="ЗаданиеWpf11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ЗаданиеWpf11"
+        mc:Ignorable="d"
+        Title="Знак запрещено" Height="420" Width="400">
+    <UniformGrid>
+        <Path Fill="Red" Stroke="Black" Margin="5">
+            <Path.Data>
+                <GeometryGroup>
+                    <EllipseGeometry Center="190,180" RadiusX="180" RadiusY="180"/>
+                    <EllipseGeometry Center="190,180" RadiusX="150" RadiusY="150"/>
+                    <RectangleGeometry Rect="180,30,30,300">
+                        <RectangleGeometry.Transform>
+                            <RotateTransform Angle="225" CenterX="190" CenterY="180"/>
+                        </RectangleGeometry.Transform>
+                    </RectangleGeometry>
+                </GeometryGroup>
+            </Path.Data>
+        </Path>
+        
+    </UniformGrid>
+</Window>
